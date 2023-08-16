@@ -1,3 +1,24 @@
+@font-face{
+    src:url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family:opensans;
+}
+@font-face{
+    src:url(fonts/Raleway-VariableFont_wght.ttf);
+    font-family:railway;
+}
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll; 
+  
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/*Used to hide scroll bar*/
+
+
 .top {
     display:flex;
     height:250px;
@@ -44,21 +65,26 @@
 }
 
 .textBig1{
+    font-family: railway;
     font-size: 2.75rem;
     margin-bottom:15px;
-    font-weight:550;
+    font-weight:bold;
     padding-top:50px;
     margin-right: 200px;
+    color: hsl(243, 87%, 12%);
     
 }
 
 .textSmaller1{
-    font-size:1.35rem;
+    font-family: opensans;
+    font-size:1rem;
+    font-weight: 400;
     margin-bottom:15px;
     margin-right: 150px;
+    color: hsl(243, 87%, 12%);
 }
 
-.emailField{
+.emailField1{
     width:300px;
     height:25px;
 }
@@ -70,15 +96,291 @@
   }
 
 .getStarted{
-    background-color:#6a96fe; 
+    background-color:#3464f3;
+    box-shadow: 1px 1px 1px 0.5px #575988;
+    
     color:White;
-    height:32px;
-    width:200px;
+    height:2.5rem;
+    width:12.5rem;
     margin-left:10px;
     border-radius:5px;
     border:0;
 }
 
+.getStarted:hover{
+    background-color:#6a96fe;  
+}
+
+.getStarted:active {
+    box-shadow: inset 1px 1px 1px #000;
+  }
+
 .img2{
     max-width:50%;
 }
+
+.second-section{
+    display: flex;
+    flex-direction: column;
+}
+.img3{
+    margin-left: -25px;
+    width: 105%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.background1{
+    background-color: hsl(170, 45%, 43%);
+    display: flex;
+    width: 110%;
+    height: 40rem;
+    margin-top:-25px;
+    margin-left: -25px;
+    margin-right: -25px;
+  
+}
+
+.textBig2{
+    font-family: railway;
+    font-size: 2.75rem;
+    margin-bottom:15px;
+    font-weight:700;
+    padding-top:50px;
+    margin-right: 200px;
+    padding-left: 6.25rem;
+    color: hsl(243, 87%, 12%);
+}
+
+.textSmaller2{
+    font-family: opensans;
+    font-size:1rem;
+    margin-bottom:15px;
+    padding-left: 100px;
+    padding-right: 13rem;
+    color: #040845;
+}
+
+.specialText{
+    display: flex;
+    font-size:1.35rem;
+    margin-bottom:15px;
+    padding-left: 100px;
+    color: #6b9e99;
+}
+
+.second-section1:hover{
+    opacity:0.7;
+}
+
+.greenUnderline{
+    border-bottom: 1px solid #6b9e99;
+    width:200px;
+    margin-left: 100px;
+    margin-top:-15px;
+}
+
+.smallArrow{
+    margin-left: 5px;
+}
+.specialBox{
+    display:flex;
+    flex-direction: column;
+    border:5px solid white;
+    border-radius: 10px;
+    margin-left: 100px;
+    box-shadow: 0 0 10px 2px #f0eff4;
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 350px;
+    height: 200px;
+}
+
+.specialBox1{
+    margin-left:1rem;
+    margin-top:1rem;
+}
+
+.specialBox2{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    color: #040845;
+}
+
+.testimonial{
+    border-radius: 50%;
+    border: 0px solid white;
+}
+
+.specialBox3{
+    display:flex;
+    margin-left:1rem;
+    margin-top:0.5rem;
+    color: #040845;
+}
+
+.specialBox3container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.kyle{
+    margin:0;
+    font-weight: bold;
+}
+
+.founder{
+    margin:0;
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+}
+
+.imagebackground1{
+    margin-right: 15rem;
+  
+    padding-left: 2rem;
+    margin-top: 5rem;
+}
+
+.second-section-part1{
+    padding-right: 10rem;
+}
+
+.lowersection{
+    display: flex;
+    background-color: #575988;
+    margin-left: -0.5rem;
+    margin-right:-0.5rem;
+    width: 110%;
+    height:20rem;
+}
+
+.lowersection1{
+    margin-top: 7rem;
+    margin-left: 6.25rem;
+    width: 30rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.getEarlyText{
+    font-family: railway;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top:0;
+    word-wrap: break-word;
+}
+
+.getEarlyDetailsText{
+    font-size: 1.125rem;
+    color: white;
+}
+
+.lowersection2 {
+    margin-top: 7rem;
+    padding-left: 35rem;
+}
+.inputEmail2{
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    
+}
+
+.emailField2{
+    width:25rem;
+    height:2.25rem;
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+    border:0px solid white
+}
+
+.footer{
+    display:flex;  
+    color: white;
+    justify-content: space-around;
+    background-color: hsl(243, 87%, 12%);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom:-1rem;
+    height: 300px;
+    width: 110%;
+}
+
+.footer1{
+    margin-top: 4rem;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2{
+    margin-top: 7.3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7rem;
+}
+.footer3{
+    margin-top:7.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5rem;
+}
+.footer4{
+    display:flex;
+    margin-top:7.3rem;
+    margin-right: 15rem;
+    justify-content: space-around;
+    width: 7%;
+}
+.logo2{
+    filter:brightness(0) invert(1);
+    margin-bottom: 1rem;
+}
+
+.phone{
+    display:flex;
+    margin-bottom: 1rem;
+}
+
+.email{
+    display:flex;
+}
+
+.icon{
+    margin-right: 1rem;
+}
+
+.bottomtext{
+    margin:0;
+    font-size: 0.85rem;
+    font-family:railway;
+}
+.attribution{
+    text-align: center;
+    color: white;
+    position: relative;
+    background-color: hsl(243, 87%, 12%);
+    margin:-1rem;
+}
+
+.socialDiv{
+    height: 32px;
+    width: 32px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.social{
+    margin-top:0.5rem;
+    margin-left: 0.5rem;
+    filter:brightness(0) invert(1);
+    text-align: center;
+    text-decoration: none;
+   
+  }
