@@ -6,7 +6,14 @@
     src:url(fonts/Raleway-VariableFont_wght.ttf);
     font-family:railway;
 }
+
+.html{
+    height:100%;
+}
 body {
+    margin:0;
+    box-sizing: border-box;
+    min-height: 100%;
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     overflow-y: scroll; 
@@ -53,37 +60,45 @@ body::-webkit-scrollbar {
     margin-right: 25px;
 }
 
-.middle1{
+.first-section{
     display:flex;
-    width:50%;
-    height:500px;
-    margin-left: 75px;
-    flex-direction: column;
+    width:100%;
+    height:50%;
+    flex-direction: row;
     margin-bottom: 100px;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
     
 }
+.first-section1{
+    width:30%;
+}
+.first-section2{
+    width:30%;
+}
 
-.textBig1{
+.bigTextDiv{
+
+}
+
+.bigText{
+    margin:0;
     font-family: railway;
     font-size: 2.75rem;
-    margin-bottom:15px;
-    font-weight:bold;
-    padding-top:50px;
-    margin-right: 200px;
     color: hsl(243, 87%, 12%);
-    
+    font-weight:bold;
 }
 
-.textSmaller1{
+.smallTextDiv{
+
+}
+
+.smallText{
+    margin:0;
     font-family: opensans;
     font-size:1rem;
     font-weight: 400;
-    margin-bottom:15px;
-    margin-right: 150px;
     color: hsl(243, 87%, 12%);
 }
-
 .emailField1{
     width:300px;
     height:25px;
@@ -115,8 +130,10 @@ body::-webkit-scrollbar {
     box-shadow: inset 1px 1px 1px #000;
   }
 
-.img2{
-    max-width:50%;
+
+
+.first-section2{
+    min-width:50%;
 }
 
 .second-section{
@@ -303,11 +320,9 @@ body::-webkit-scrollbar {
     color: white;
     justify-content: space-around;
     background-color: hsl(243, 87%, 12%);
-    margin-left: -1rem;
-    margin-right: -1rem;
-    margin-bottom:-1rem;
-    height: 300px;
-    width: 110%;
+    margin-bottom:0;
+    height: 150%;
+    width: 100%;
 }
 
 .footer1{
@@ -363,10 +378,10 @@ body::-webkit-scrollbar {
 }
 .attribution{
     text-align: center;
+    margin: 0;
     color: white;
     position: relative;
     background-color: hsl(243, 87%, 12%);
-    margin:-1rem;
 }
 
 .socialDiv{
